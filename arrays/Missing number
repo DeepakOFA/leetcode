@@ -1,0 +1,14 @@
+import java.util.*;
+class Solution {
+    public int missingNumber(int[] nums) {
+        Arrays.sort(nums);
+        int j = 0;
+        for(int i : nums){
+            if(j == i){
+                j++;
+            }
+            else break;
+        }
+        return j;
+    }
+}
